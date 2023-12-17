@@ -82,8 +82,8 @@ def download_GEO_data(dataset_inf, key_word, keyword_idx, checkpoint):
     # ftp.timeout = 300
     dataset_accessions, Series_FTP_Links = dataset_inf
     Tools = utils.Tool()
-    # local_dir = f'../Datasets/GEO/{keyword_idx + 1}_Trait_{Tools.clean_filename(key_word)}'
-    local_dir = f'/media/techt/DATA/GEO/{keyword_idx + 1}_Trait_{Tools.clean_filename(key_word)}'
+    # local_dir = f'../Datasets/GEO/{keyword_idx + 1}_{Tools.clean_filename(key_word)}'
+    local_dir = f'/media/techt/DATA/GEO/{keyword_idx + 1}_{Tools.clean_filename(key_word)}'
     print("local_dir:", local_dir)
 
     if not os.path.exists(local_dir):
